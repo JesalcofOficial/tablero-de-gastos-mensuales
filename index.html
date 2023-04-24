@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/index.js"></script>
+  <title>Tablero de Gastos Mensuales</title>
+</head>
+<body>
+  <div class="center">
+    <table id="tablero">
+      <thead>
+        <tr>
+          <th class="col_dia">Día</th>
+          <th>Concepto</th>
+          <th class="col_importe">Importe</th>
+          <th class="col_importe" colspan="2">Importe por día</th>
+          <th colspan="2">
+            <input
+              type="text"
+                Placeholder="Nombra tu tablero"
+                id="tituloTabla">
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><ol id="ds1"></ol></td>
+          <td><ol id="cs1"></ol></td>
+          <td><ol id="is1"></ol></td>
+          <td class="col_dia"><ol id="di1"></ol></td>
+          <td><ol id="ixd1"></ol></td>
+          <th>
+            <span class="sc sc1">1</span>
+            <span class="sc sc2">7</span>  
+            Semana 1
+          </th>
+          <th rowspan="2">
+            Primera quincena
+          </th>
+        </tr>
+        <tr>
+          <td><ol id="ds2"></ol></td>
+          <td><ol id="cs2"></ol></td>
+          <td><ol id="is2"></ol></td>
+          <td><ol id="di2"></ol></td>
+          <td><ol id="ixd2"></ol></td>
+          <th>
+            <span class="sc sc1">8</span>
+            <span class="sc sc2">15</span>  
+            Semana 2
+          </th>
+        </tr>
+        <tr>
+          <td><ol id="ds3"></ol></td>
+          <td><ol id="cs3"></ol></td>
+          <td><ol id="is3"></ol></td>
+          <td><ol id="di3"></ol></td>
+          <td><ol id="ixd3"></ol></td>
+          <th>
+            <span class="sc sc1">16</span>
+            <span class="sc sc2">22</span>  
+            Semana 3
+          </th>
+          <th rowspan="2">
+            Última quincena
+          </th>
+        </tr>
+        <tr>
+          <td><ol id="ds4"></ol></td>
+          <td><ol id="cs4"></ol></td>
+          <td><ol id="is4"></ol></td>
+          <td><ol id="di4"></ol></td>
+          <td><ol id="ixd4"></ol></td>
+          <th>
+            <span class="sc sc1">23</span>
+            <span class="sc sc2">Fin</span>  
+            Semana 4
+          </th>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Botón que abre la ventana modal -->
+  <div class="btn-agregar" onclick="openModal()">Abrir ventana modal</div>
+
+  <!-- Ventana modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <p>Aquí va el contenido de la ventana modal</p>
+    </div>
+  </div>
+
+</body>
+</html>

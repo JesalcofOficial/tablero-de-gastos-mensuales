@@ -1,0 +1,166 @@
+body * {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.center {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  margin: auto;
+  width: 80%;
+  height: 80%;
+  display: flex;
+}
+
+table {
+  flex: 1;
+	border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 5px 10px 0 rgb(157 195 230 / 50%);
+}
+
+th{
+	/*background-color: white;*/
+  color:#2E75B6;
+	font-weight: bold;
+	text-align: center;
+	padding: 5px;
+	border: 1px solid #9DC3E6;
+  position: relative;
+}
+
+tbody td {
+	padding: 10px;
+	border: 1px solid #9DC3E6;
+}
+
+table * { transition: background .2s;}
+/*
+tr:hover{
+  background: #eef6ff;
+}
+
+tr:hover th > .sc{
+  text-shadow: 0 0 5px white;
+  background-color: #178bf8;
+}
+*/
+
+
+#tituloTabla{
+  color: #2E75B6;
+  margin:0;
+  padding:0;
+  border:none;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  height: 5vh;
+}
+
+.rangoDias{
+  /*writing-mode: vertical-lr;*/
+  align-items: end;
+  width:20px;
+  word-wrap: break-word;
+  text-align:center;
+  line-height:20px;
+}
+
+/*Semi circulos*/
+/*Requieren que el elemento padre tenga position relative*/
+.sc{
+	--size: 30px;
+    position: absolute;
+    height: calc(var(--size)/2);
+    width: var(--size);
+	background: #2E75B6;
+  color:white;
+  font-size: 10px;
+}
+.sc1 {
+    top: 0;
+    left: calc(-1*var(--size)/2);
+    border-radius: 0 0 var(--size) var(--size);
+}
+.sc2 {
+    bottom: 0;
+    left: calc(-1*var(--size)/2);
+    border-radius: var(--size) var(--size) 0 0;
+}
+/*Terminan los semi circulos*/
+
+
+/*Ancho de columnas*/
+
+.col_dia{
+  width: 20px;
+}
+
+.col_importe{
+  min-width: 150px;
+}
+
+/*Termina ancho de columnas*/
+
+
+
+
+/* Estilos para la ventana modal */
+.btn-agregar{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  margin: 0;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 20px;
+  background: #2E75B6;
+  transform: background 0.2s;
+}
+.btn-agregar:hover{
+  background:#178bf8;
+}
+
+.modal {
+  display: none; /* Oculta la ventana modal por defecto */
+  position: fixed; /* Posiciona la ventana modal en la pantalla */
+  z-index: 99999;  /* Ubica la ventana modal sobre los demás elementos */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Permite que la ventana modal sea desplazable */
+  background-color: rgba(0,0,0,0.4); /* Agrega un fondo oscuro a la pantalla */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* Centra la ventana modal en la pantalla */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+/*TERMINA VENTANA MODAL*/
