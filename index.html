@@ -35,10 +35,12 @@
           <th>
             <span class="sc sc1">1</span>
             <span class="sc sc2">7</span>  
-            Semana 1
+            <p>$<span>0.00</span></p>
+            <p><span>Semana 1</span></p>
           </th>
           <th rowspan="2">
-            Primera quincena
+            <p>$<span>0.00</span></p>
+            <p><span>Primera quincena</span></p>
           </th>
         </tr>
         <tr>
@@ -50,7 +52,8 @@
           <th>
             <span class="sc sc1">8</span>
             <span class="sc sc2">15</span>  
-            Semana 2
+            <p>$<span>0.00</span></p>
+            <p><span>Semana 2</span></p>
           </th>
         </tr>
         <tr>
@@ -62,22 +65,43 @@
           <th>
             <span class="sc sc1">16</span>
             <span class="sc sc2">22</span>  
-            Semana 3
+            <p>$<span>0.00</span></p>
+            <p><span>Semana 3</span></p>
           </th>
           <th rowspan="2">
-            Última quincena
+            <p>$<span>0.00</span></p>
+            <p><span>Segunda quincena</span></p>
           </th>
         </tr>
         <tr>
-          <td><ol id="ds4"></ol></td>
-          <td><ol id="cs4"></ol></td>
+          <td><ol id="ds4">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+          </ol></td>
+          <td><ol id="cs4">
+            <li>concepto 1</li>
+            <li>concepto 2</li>
+            <li>concepto 3</li>
+            <li>concepto 4</li>
+            <li>concepto 5</li>
+            <li>concepto 6</li>
+            <li>concepto 7</li>
+            <li>concepto 8</li>
+          </ol></td>
           <td><ol id="is4"></ol></td>
           <td><ol id="di4"></ol></td>
           <td><ol id="ixd4"></ol></td>
           <th>
             <span class="sc sc1">23</span>
             <span class="sc sc2">Fin</span>  
-            Semana 4
+            <p>$<span>0.00</span></p>
+            <p><span>Semana 4</span></p>
           </th>
         </tr>
       </tbody>
@@ -92,11 +116,11 @@
     <div class="modal-content">
       <span class="close" onclick="closeModal()">&times;</span>
       <form>
-        <input type="number" name="dia" id="dia">
-        <input type="text" name="concepto" id="concepto">
-        <input type="number" name="importe" id="importe">
-        <input type="button" value="Enviar">
-        <input type="button" value="Limpiar">
+        <input type="number" name="dia" id="dia" class="escribe" placeholder="Día">
+        <input type="text" name="concepto" id="concepto" class="escribe" placeholder="Concepto">
+        <input type="number" name="importe" id="importe" class="escribe" placeholder="Importe">
+        <input type="button" value="Agregar">
+        <input type="reset" value="Limpiar">
     </form>
     </div>
   </div>

@@ -4,6 +4,37 @@ body * {
 	padding: 0;
 }
 
+input {
+  padding: 10px;
+  border:none;
+  outline: none;
+}
+
+td ol{
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  display: block;
+  position: absolute;
+  box-sizing: border-box;
+}
+td ol li{
+  text-align: center;
+}
+
+.escribe{
+  border-bottom: 1px solid #888;
+}
+
+.escribe:hover,
+.escribe:focus{
+  border-bottom-color: #178bf8;
+}
+
 .center {
   top: 0;
   bottom: 0;
@@ -32,14 +63,15 @@ th{
 	text-align: center;
 	padding: 5px;
 	border: 1px solid #9DC3E6;
-  position: relative;
 }
 
 tbody td {
-	padding: 10px;
 	border: 1px solid #9DC3E6;
 }
 
+th, td{
+  position: relative;
+}
 table * { transition: background .2s;}
 /*
 tr:hover{
@@ -101,11 +133,11 @@ tr:hover th > .sc{
 /*Ancho de columnas*/
 
 .col_dia{
-  width: 20px;
+  width: 40px;
 }
 
 .col_importe{
-  min-width: 150px;
+  min-width: 80px;
 }
 
 /*Termina ancho de columnas*/
